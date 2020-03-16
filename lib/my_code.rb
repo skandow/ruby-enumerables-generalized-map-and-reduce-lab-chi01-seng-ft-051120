@@ -16,5 +16,6 @@ def reduce(array, starting_point = 0)
     result = yield(array[array_count], result)
     array_count += 1 
   end 
-  result 
+  if result == nil 
+  result = false  
 end 
