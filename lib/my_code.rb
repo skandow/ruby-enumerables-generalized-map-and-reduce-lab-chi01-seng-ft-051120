@@ -10,6 +10,11 @@ def map(array)
 end
 
 def reduce(array, starting_point = 0)
-  result = yield(array, starting_point)
-  result
+  result = starting_point
+  array_count = 0 
+  while array_count < array.length do 
+    result = yield(array[array_count], result)
+    array_count += 1 
+  end 
+  result 
 end 
