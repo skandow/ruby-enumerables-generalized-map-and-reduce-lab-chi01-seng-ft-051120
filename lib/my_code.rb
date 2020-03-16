@@ -19,4 +19,5 @@ def reduce(array, starting_point = 0)
   if result == nil 
   result = false  
 end
+result 
 end 
